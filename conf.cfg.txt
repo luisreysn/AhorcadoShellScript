@@ -1,0 +1,2 @@
+DICCIONARIO: /home/luis/Escritorio/archivos/diccionario.txt
+ESTADISTICAS: /home/luis/Escritorio/archivos/estadisticas.txt

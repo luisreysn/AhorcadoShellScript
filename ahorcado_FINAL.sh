@@ -215,7 +215,7 @@ do
 			
 			PARTIDAS_JUGADAS=$(($PARTIDAS_JUGADAS + 1))
 			touch tmp1
-			#Primero genero la palabra aleatoria.
+			#Primero genero la palabra aleatoria a partir de un pid y un numero aleatorio.
 			PID=`ps -e | cut -c 1-6 | sort | tail -1 | cut -c 5-6`
 			NumAleatorio=$(( ( RANDOM % 99 ) + 1))
 			SUMA=$(($VARIABLE+$NumAleatorio))
