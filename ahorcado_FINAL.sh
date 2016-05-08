@@ -225,7 +225,7 @@ do
 			#buscar la palabra a la que equivale.
 			PALABRA=`cat $DIRECCION_DICCIONARIO | head -$MODULO | tail -1`
 			PALABRA=`echo $PALABRA |  tr '[a-z]' '[A-Z]'`
-			TAM_PAL=`echo $((${#PALABRA} - 0))`
+			TAM_PAL=`echo $((${#PALABRA} - 1))`    #Si se usa en Solaris o algunis sistemas antiguos restar 0 en vez de 1
 			echo $PALABRA > tmp2
 			
 			#Vamos a separar las letras de la palabra y guardarlas en un array
